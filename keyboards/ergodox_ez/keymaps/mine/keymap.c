@@ -128,22 +128,42 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
+
+// left
+#define JA_DQUOT KC_AT   // "
+#define JA_BQUOT KC_LCBR // `
+#define JA_LCBR KC_RCBR  // {
+#define JA_RCBR KC_PIPE  // }
+
+#define JA_RPRN KC_LPRN  // )
+#define JA_TRAS KC_RPRN  // (blank)
+
+#define JA_AND KC_CIRC // &
+#define JA_TGGL KC_TILD  // (toggle en/ja)
+
+// right
+#define JA_LPRN KC_ASTR // (
+#define JA_TILD KC_PLUS // ~
+#define JA_QUOT KC_AMPR // '
+
+
+
 // SYMBOLS
 [SYMB] = LAYOUT_ergodox(
        // left hand
-       VRSN,   KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_TRNS,
-       KC_TRNS,KC_EXLM,KC_AT,  KC_LCBR,KC_RCBR,KC_PIPE,KC_TRNS,
-       KC_TRNS,KC_HASH,KC_DLR, KC_LPRN,KC_RPRN,KC_GRV,
-       KC_TRNS,KC_PERC,KC_CIRC,JA_AT,  JA_LBRC,KC_TILD,KC_TRNS,
-          EPRM,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+       VRSN,   KC_F1,  KC_F2,    KC_F3,   KC_F4,  KC_F5,   KC_TRNS,
+       KC_TRNS,KC_EXLM,JA_DQUOT, JA_BQUOT,JA_LCBR,JA_RCBR, KC_TRNS,
+       KC_TRNS,KC_HASH,KC_DLR,   JA_RPRN, JA_TRAS,KC_GRV,
+       KC_TRNS,KC_PERC,JA_AND,   JA_AT,   JA_LBRC,JA_TGGL,KC_TRNS,
+          EPRM,KC_TRNS,KC_TRNS,  KC_TRNS, KC_TRNS,
                                        RGB_MOD,KC_TRNS,
                                                KC_TRNS,
                                RGB_VAD,RGB_VAI,KC_TRNS,
        // right hand
        KC_TRNS, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_F11,
-       KC_TRNS, KC_UP,   KC_7,   KC_8,    KC_9,    KC_ASTR, KC_F12,
+       KC_TRNS, KC_UP,   KC_7,   KC_8,    KC_9,    JA_LPRN, KC_F12,
                 KC_DOWN, KC_4,   KC_5,    KC_6,    KC_PLUS, KC_TRNS,
-       KC_TRNS, KC_AMPR, KC_1,   KC_2,    KC_3,    JA_RBRC, KC_TRNS,
+       KC_TRNS, JA_QUOT,  KC_1,   KC_2,    KC_3,    JA_RBRC, KC_TRNS,
                          KC_TRNS,KC_DOT,  KC_0,    JA_HAT,  KC_TRNS,
        RGB_TOG, RGB_SLD,
        KC_TRNS,
