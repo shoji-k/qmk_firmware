@@ -7,13 +7,25 @@
 #define SYMB 1 // symbols
 #define MDIA 2 // media keys
 
-#define JA_CLON KC_QUOT  // : and +
-#define JA_AT   KC_LBRC  // @ and `
-#define JA_HAT  KC_EQL   // ^ and ~
-#define JA_ENUN KC_RO    // \ and _ (EN mark and UNder score)
-#define JA_ENVL KC_JYEN  // \ and | (EN mark and Vertical Line)
-#define JA_LBRC KC_RBRC  // [ and {
-#define JA_RBRC KC_BSLS  // ] and }
+#define JA_CLON KC_QUOT  // ' -> : and +
+#define JA_AT   KC_LBRC  // [ -> @ and `
+#define JA_HAT  KC_EQL   // = -> ^ and ~
+#define JA_ENUN KC_RO    // not used -> \ and _ (EN mark and UNder score)
+#define JA_ENVL KC_JYEN  // not userd -> \ and | (EN mark and Vertical Line)
+#define JA_LBRC KC_RBRC  // ] -> [ and {
+#define JA_RBRC KC_BSLS  // \ -> ] and }
+
+#define JA_DQUOT KC_AT   // @ -> "
+#define JA_BQUOT KC_LCBR // " -> `
+#define JA_LCBR KC_RCBR  // } -> {
+#define JA_RCBR KC_PIPE  // | -> }
+#define JA_RPRN KC_LPRN  // ( -> )
+#define JA_TRAS KC_RPRN  // ) -> blank
+#define JA_AMPR KC_CIRC  // ^ -> &
+#define JA_TGGL KC_TILD  // ~ -> toggle en/ja
+#define JA_LPRN KC_ASTR  // * -> (
+#define JA_TILD KC_PLUS  // + -> ~
+#define JA_QUOT KC_AMPR  // & -> '
 
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here
@@ -129,23 +141,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `--------------------'
  */
 
-// left
-#define JA_DQUOT KC_AT   // "
-#define JA_BQUOT KC_LCBR // `
-#define JA_LCBR KC_RCBR  // {
-#define JA_RCBR KC_PIPE  // }
-
-#define JA_RPRN KC_LPRN  // )
-#define JA_TRAS KC_RPRN  // (blank)
-
-#define JA_AND KC_CIRC // &
-#define JA_TGGL KC_TILD  // (toggle en/ja)
-
-// right
-#define JA_LPRN KC_ASTR // (
-#define JA_TILD KC_PLUS // ~
-#define JA_QUOT KC_AMPR // '
-
 
 // SYMBOLS
 [SYMB] = LAYOUT_ergodox(
@@ -153,7 +148,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        VRSN,   KC_F1,  KC_F2,    KC_F3,   KC_F4,  KC_F5,   KC_TRNS,
        KC_TRNS,KC_EXLM,JA_DQUOT, JA_BQUOT,JA_LCBR,JA_RCBR, KC_TRNS,
        KC_TRNS,KC_HASH,KC_DLR,   JA_RPRN, JA_TRAS,KC_GRV,
-       KC_TRNS,KC_PERC,JA_AND,   JA_AT,   JA_LBRC,JA_TGGL,KC_TRNS,
+       KC_TRNS,KC_PERC,JA_AMPR,   JA_AT,   JA_LBRC,JA_TGGL,KC_TRNS,
           EPRM,KC_TRNS,KC_TRNS,  KC_TRNS, KC_TRNS,
                                        RGB_MOD,KC_TRNS,
                                                KC_TRNS,
