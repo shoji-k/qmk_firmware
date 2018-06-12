@@ -147,7 +147,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #define JA_QUOT KC_AMPR // '
 
 
-
 // SYMBOLS
 [SYMB] = LAYOUT_ergodox(
        // left hand
@@ -162,8 +161,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        // right hand
        KC_TRNS, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_F11,
        KC_TRNS, KC_UP,   KC_7,   KC_8,    KC_9,    JA_LPRN, KC_F12,
-                KC_DOWN, KC_4,   KC_5,    KC_6,    KC_PLUS, KC_TRNS,
-       KC_TRNS, JA_QUOT,  KC_1,   KC_2,    KC_3,    JA_RBRC, KC_TRNS,
+                KC_DOWN, KC_4,   KC_5,    KC_6,    JA_TILD, KC_TRNS,
+       KC_TRNS, JA_QUOT,  KC_1,  KC_2,    KC_3,    JA_RBRC, KC_TRNS,
                          KC_TRNS,KC_DOT,  KC_0,    JA_HAT,  KC_TRNS,
        RGB_TOG, RGB_SLD,
        KC_TRNS,
