@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______, _______, _______, AU_ON,   AU_OFF,  AG_NORM,                   AG_SWAP, QWERTY,  COLEMAK, DVORAK,  _______, _______, \
       _______, _______, _______, KC_VOLD, KC_VOLU, _______, _______, _______, _______, _______, RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, \
       _______, _______, _______, RGB_VAD, RGB_VAI, _______, _______, _______, _______, _______, RGB_SMOD,RGB_HUD, RGB_SAD, RGB_VAD \
-      )
+      ),
 
   /* Colemak
    * ,-----------------------------------------.             ,-----------------------------------------.
