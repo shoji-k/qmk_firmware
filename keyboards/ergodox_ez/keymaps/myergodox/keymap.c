@@ -26,16 +26,13 @@
 #define JA_QUOT KC_AMPR  // & -> '
 
 enum combos {
-  CC_ESC,
-  AB_ESC
+  CC_ESC
 };
 
 const uint16_t PROGMEM cc_combo[] = {KC_LCTL, KC_ENT, COMBO_END};
-const uint16_t PROGMEM ab_combo[] = {KC_A, KC_B, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
-  [CC_ESC] = COMBO(cc_combo, KC_ESC), // this works but not quickly
-  [AB_ESC] = COMBO(ab_combo, KC_ESC) // ab is just sample
+  [CC_ESC] = COMBO(cc_combo, KC_ESC)
 };
 
 enum custom_keycodes {
