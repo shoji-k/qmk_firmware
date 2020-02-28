@@ -1,3 +1,13 @@
+# start  
+
+```bash
+git clone -b mine git@github.com:shoji-k/qmk_firmware.git
+cd qmk_firmware/
+make git-submodule
+sudo apt-get install avr-libc gcc-avr
+make helix:myhelix
+```
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
