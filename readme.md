@@ -8,6 +8,10 @@ sudo apt-get install avr-libc gcc-avr
 make helix:myhelix
 ```
 
+```bash
+make ergodox_ez:myergodox
+```
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
